@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 100px 300px auto 500px;
+  grid-template-areas: "nav    nav     nav    nav"
+                        "header header header header"
+                        "main   main   main   main"
+                        "aside aside aside aside"
+                        "footer footer footer footer";
+
+}
+
+.nav{
+    grid-area: nav;
+    background-color: rgb(209, 237, 228);
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav li{
+    padding: 10px;
+    
+}
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(148, 48, 12);
+    padding: 10px;
+}
+.nav img{
+    width: 120px;
+}
+.header{
+    background-color: aqua;
+    grid-area: header;
+    background-image: url(../img/florgialo.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+
+    
+    
+}
+.header h1{
+    color: whitesmoke;
+    margin: 15px;
+    
+
+}
+header p{
+    color: azure;
+    margin: 15px;
+}
+.main{
+    background-color: rgb(247, 240, 240);
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main .btn{
+    width: 100px;
+    color:white;
+   background-color: blue;
+    border :0;
+padding: 10px;  
+border-radius: 5px;
+margin: 10px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img:hover{
+    transform: translate(20px,20px);
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+
+.cardInfo{
+    margin: 10px;
+}
+.aside{
+    background-color: rgb(202, 231, 194);
+    grid-area: aside ;
+}
+.aside h1 {
+    text-align: center;
+    color: azure;
+    margin: 10px;
+    padding: 5px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border: 1px solid black;
+border-radius: 5px;
+background-image: linear-gradient( rgb(19, 43, 19) , yellow);
+}
+
+.footer{
+    background-color: rgb(197, 218, 197);
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    
+}
+.footer img{
+    width: 100px ;
+   
+
+}
+
+@media (min-width:800px){
+    .contenedor{
+    
+       
+       
+        grid-template-rows:100px 350px auto 100px;
+        grid-template-areas: "nav    nav     nav    nav"
+                              "header header header header"
+                              "main   main   main   aside"
+                              "footer footer footer footer";
+      
+      }
+    
+
+}
+.mainGaleria{
+    
+    margin-bottom: auto;
+   
+    
+    
+
+}
+.mainGaleria h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 10px;
+
+} 
+.mainGaleria img{
+    border: 1px solid black;
+    border-radius: 80px;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    padding: 1px;
+
+
+} 
+
+
+
+
+
+.bloques{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(min-width:768px){
+
+.bloques{
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+}
+
+.bloque{   
+    background-color: aquamarine;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.bloque__tema{
+    color: rgb(11, 1, 21);
+    background: rgb(2,0,36);
+    background: rgb(133,195,34);
+    background: linear-gradient(0deg, rgba(133,195,34,1) 0%, rgba(45,253,76,1) 100%);
+}
+.bloque img{
+    border: 5px solid green;
+    border-radius: 100px;
+    margin: 20px;
+}
+.bloque img:hover{
+    transform: scale(1,2);
+
+}
+
+.transformaciones{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.img:hover{
+    transform: translate(30px,20px);
+    
+}
+.img2:hover{
+    transform: translate(30px,20px);
+    
+}
+.img3:hover{
+    transform: scale(1,2)
+}
+.img4:hover{
+    transform: skewX(10deg);
+}
+.img5:hover{
+    transform: skewY(10deg);
+}
+.img6:hover{
+    transform: rotateZ(360deg);
+}
