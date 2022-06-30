@@ -120,11 +120,12 @@ background-image: linear-gradient( rgb(19, 43, 19) , yellow);
     background-color: rgb(197, 218, 197);
     grid-area: footer;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
   
     
 }
+
 .footer img{
     width: 100px ;
    
