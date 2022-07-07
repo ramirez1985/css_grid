@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$colorPrincipal:rgb(209, 237, 228);
+.nav{
+    background-color:$colorPrincipal
+    ul {
+        display: flex;
+        list-style: none;
+    }
+    li{
+        padding: 10px;
+        
+    }
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(12, 39, 148);
+        padding: 10px;
+    }
+}
+
