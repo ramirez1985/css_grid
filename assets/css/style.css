@@ -1,10 +1,39 @@
-.nav{
-  grid-area: nav;
-  background-color: rgb(209, 237, 228);
-  background-size: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tarjeta {
+  text-align: center;
+  margin: 10px;
+}
+.tarjeta img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 100%;
+  text-align: center;
+}
+.tarjeta img titulo {
+  text-align: center;
+}
+
+.tarjetas {
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 50px;
+}
 
-
+.tarjeta__btn {
+  margin: 10px;
+  padding-top: 10px;
+  background-color: blue;
+  padding: 8px 12px;
+  color: white;
+  font-size: 12px;
+  border: 0px;
+  border-radius: 5px;
 }
