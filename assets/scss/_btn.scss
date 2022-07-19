@@ -1,4 +1,10 @@
-
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 50px;
+}
 .tarjeta{
     text-align: center;
     margin: 10px;
@@ -10,12 +16,20 @@
         text-align: center;
             titulo{
              text-align: center;
+                &__btn{
+                    margin: 10px;
+                    padding-top: 10px;
+                    background-color: blue;
+                    padding: 8px 12px;
+                    color: white;
+                    font-size: 12px;
+                    border: 0px;
+                    border-radius: 5px;
+                    }
+                }
              
-            
-            
-            
             }
     }
-}
+
 
 

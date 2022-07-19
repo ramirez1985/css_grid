@@ -1,27 +1,9 @@
 @import"reset";
 @import "btn";
-@import"variables";
+@import"tarjetacontacto";
 
 
 
 
-.tarjetas{
-    display: flex;
-    justify-content: center;
-    margin: 15px;
-    border-radius: 10px;
-    padding: 50px;
-}
 
-.tarjeta__btn{
-    margin: 10px;
-    padding-top: 10px;
-    background-color: $colorBoton;
-    padding: 8px 12px;
-    color: white;
-    font-size: 12px;
-    border: 0px;
-    border-radius: 5px;
-    }
 
-  
